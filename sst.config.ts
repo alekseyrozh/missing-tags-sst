@@ -16,10 +16,10 @@ export default {
     };
   },
   stacks(app) {
-    app.stack(MyStack);
-    app.stack(MyStack2);
-    app.stack(MyStack3);
-    app.stack(MyStack4);
+    app.stack(MyStack, { tags: { foo2: "bar2" } });
+    app.stack(MyStack2, { tags: { foo2: "bar2" } });
+    app.stack(MyStack3, { tags: { foo2: "bar2" } });
+    app.stack(MyStack4, { tags: { foo2: "bar2" } });
     app.stack(MyStack5);
     app.stack(MyStack6);
     app.stack(MyStack7);
